@@ -1,0 +1,141 @@
+/* Styles de base */
+/*Info bulle*/
+
+/*Titre h1*/
+/*h1 {
+	font-family: var(--open-sans); /* Utilisation de la variable --open-sans */
+/*  color: var(--gray-15); /* Utilisation de la variable --gray-15 */
+/*}*/
+body{
+  color: var(--gray-100); 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+
+h1 {
+  font-size: 2rem; /* Ajustez la taille du texte en fonction de vos préférences */
+  color: #fff; /* Couleur du texte (blanc) */
+  background-image: url('../../images/Favicon/carbon.jpg'); /* Spécifiez le chemin de votre image */
+  background-color: #333; /* Couleur de fond (gris sombre) */
+  padding: 20px; /* Espace autour du texte */
+  border-radius: 10px; /* Coins arrondis */
+  text-align: center; /* Centrer le texte horizontalement */
+  font-family: 'Arial', sans-serif; /* Police de caractères (ajustez selon vos préférences) */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+}
+/*Titre h1*/
+/* Styles pour le premier h2 */
+h2:first-of-type {
+  font-size: 30px;
+  color: #C21212; /* Couleur du texte en rouge */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#fc0303,#c14646 ,#df2626, #FC2803); /*#8f848d, #49333e, #2d7558*/
+  color: transparent; /* Mettre le texte en transparent */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajouter une ombre au texte */
+}
+/*Titre h2*/
+/* Styles pour les titres H3 */
+h3 {
+	font-size: 24px; /* Taille de police pour H3 */
+	color: #333; /* Couleur du texte */
+	margin-top: 20px; /* Marge en haut du titre */
+	margin-bottom: 10px; /* Marge en bas du titre */
+	font-weight: bold; /* Épaisseur de la police */
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(45deg, #FF3600, #f70606);
+}
+/* Styles pour les titres H3 */
+/* Styles pour les titres H4 */
+h4 {
+	font-size: 20px; /* Taille de police pour H4 */
+	color: #666; /* Couleur du texte */
+	margin-top: 15px; /* Marge en haut du titre */
+	margin-bottom: 10px; /* Marge en bas du titre */
+	font-weight: bold; /* Épaisseur de la police */
+}
+/* Styles pour les titres H4 */
+
+p {
+  color: var(--gray-100); /* Utilisation de la variable --gray-100 */
+
+  /*moi*/
+   width: 80%; /* Largeur relative */
+  margin: 0 auto; /* Centre l'élément horizontalement */
+}
+
+
+/* Styles pour les paragraphes encadrés */
+.encadre {
+  border: 1px solid black; /* Ajoute une bordure */
+  padding: 10px; /* Ajoute un espace intérieur */
+  background: var(--gray-75); /*#d6cfcb;*/
+  color: var(--gray-25);
+/*color: var(--primary-color);*/
+}
+
+/* Styles pour les paragraphes non encadrés */
+.noencadre {
+  /* Vous pouvez laisser ces styles vides ou les personnaliser selon vos besoins */
+}
+
+
+ /* INFO BULLE*/
+
+
+  
+  .acronyms {
+    display: flex; /* Utilisez un conteneur flex pour aligner les éléments sur la même ligne */
+    align-items: center; /* Centrer verticalement les éléments */
+    font-size: 20px; /* Taille de police des acronymes */
+  }
+  
+  .infobulle {
+    position: relative;
+    /*cursor: help; /* Curseur de type aide pour indiquer qu'il y a des informations supplémentaires */
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .infobulle-text {
+    visibility: hidden; /* Masquer le texte de l'infobulle par défaut */
+    width: 200px; /* Largeur de l'infobulle */
+    background-color: var(--gray-36);
+    color: #fff; /* Couleur du texte de l'infobulle */
+    text-align: center;
+    border-radius: 6px; /* Coins arrondis de l'infobulle */
+    padding: 5px; /* Espace à l'intérieur de l'infobulle */
+    position: absolute;
+    z-index: 1;
+    bottom: 150%; /* Position sous l'élément parent */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* L'infobulle est initialement invisible */
+    transition: opacity 0.5s; /* Animation de l'opacité */
+  }
+  
+  .infobulle:hover .infobulle-text {
+    visibility: visible; /* Afficher l'infobulle lorsque survolé */
+    opacity: 1;
+  }
+ /* INFO BULLE*/
+
+
+
+
+
+
+
+
+

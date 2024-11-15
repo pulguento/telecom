@@ -1,0 +1,59 @@
+   /* bouton retour et home*/
+      /* Styles pour le bouton de retour en haut à gauche */
+      /* Boutons*/
+/* bouton retour*/
+      .btn-back-to-home {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        /*background-color: var(--gray-75);*/
+        background: url('../../images/Favicon/carbon.jpg') repeat;
+        color: white;
+        padding: 5px 5px;/* Réduisez ces valeurs pour raccourcir la largeur du bouton */
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+  /* Styles pour les boutons au survol de la souris */
+  .btn-back-to-home:hover, .btn-back-to-top:hover {
+    /*background-color:#0056A3;*/
+    background: url('../../images/Favicon/carbon1.jpg') repeat; /* Image de fond différente au survol */
+  }
+  /* Styles pour cacher les boutons */
+  .btn-back-to-home.hidden {
+    display: none;
+  }
+  /* bouton retour et home*/
+
+
+
+/* Styles pour le bouton de retour page haut */
+      .btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        /*background-color:var(--gray-75);*/
+        background: url('../../images/Favicon/carbon.jpg') repeat;
+        color: white;
+        padding: 5px 5px;/* Réduisez ces valeurs pour raccourcir la largeur du bouton */
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+/* Styles pour les boutons au survol de la souris */
+.btn-back-to-top:hover {
+  /*background-color: #0056A3;*/
+  background: url('../../images/Favicon/carbon1.jpg') repeat; /* Image de fond différente au survol */
+}
+
+/* Style pour cacher le bouton au départ */
+.btn-back-to-top.hidden {
+  display: none;
+}
+

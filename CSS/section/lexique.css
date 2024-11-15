@@ -1,0 +1,56 @@
+.lexique {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 20px;
+}
+
+.libelle {
+  font-weight: bold;
+  color: red;
+}
+
+.item_block {
+  text-align: center;
+}
+
+.text-link {
+  color: blue;
+  text-decoration: none;
+}
+
+.case-lex {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+  height:auto; /*250px;*/
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.case-lex.expanded .content {
+  max-height: 1000px; /* Choisis une hauteur maximale appropriée */
+}
+
+.navigation-button {
+  color: blue;
+  cursor: pointer;
+}
+
+
+
+/*recherche*/
+.case-lex {
+  display: block;
+  /* Autres styles... */
+}
+
+
+.highlighted {
+    background-color: yellow;
+}

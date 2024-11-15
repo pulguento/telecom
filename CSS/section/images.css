@@ -1,0 +1,94 @@
+/*pour images dans quotidien*/
+.imgM7450 {
+	max-width: 60%;
+	width: 190px;
+	/*height: 400px;*/
+	/*max-height: 1000px;*/
+	/*width: 50%; /* Largeur souhaitée */
+	/*height: 50%; /* Hauteur souhaitée */
+ 
+}
+/*pour images dans quotidien*/
+
+
+
+/*LOGOS Animation*/
+
+.logo-mobiles {
+  position: absolute;
+  width: 100px; /* Largeur du conteneur du logo */
+  height: 100px; /* Hauteur du conteneur du logo */
+  /*animation: logoMove 5s linear infinite; /* Animation du mouvement du logo temps*/
+  /*display: none; /* Cache les logos au départ */
+  top: 10%; /* Position au coin supérieur de la section */
+  right: 0; /* Position au coin supérieur droit de la section */
+  transform: translatex(100%);
+  transition: transform 1s; /* Animation de la transformation */
+}
+
+.logo-mobiles.active {
+  transform: translateX(0); /* Animez les logos pour les faire défiler */
+}
+
+.logo-mobiles img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; /* Rend les logos circulaires */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; /* Position de départ de l'arrière-plan */
+  }
+  50% {
+    background-position: 100% 50%; /* Position intermédiaire de l'arrière-plan */
+  }
+  100% {
+    background-position: 0% 50%; /* Position finale de l'arrière-plan */
+  }
+}
+
+@keyframes logoMove {
+  0% {
+    transform: translate(100%, 0); /* Position de départ du logo (coin supérieur droit) */
+    display: block; /* Affiche le logo au début de l'animation */
+  }
+  100% {
+    transform: translate(-150%, 0); /* Translate le logo vers la gauche (position finale) */
+    display: block; /* Assure que le logo reste visible pendant toute l'animation */
+  }
+}
+
+.logoperateur {
+  display: flex; /* Utilisation de flexbox pour aligner les éléments côte à côte */
+  align-items: center; /* Centre verticalement les éléments */
+}
+
+.logoperateur h4 {
+  margin-right: 10px; /* Ajoute un espace entre le titre et le logo */
+}
+.ombre-image {
+  width: 60px;
+  height: auto;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);/* Ajoute une ombre à l'image*/
+}
+
+.image-3d {
+  width: 200px;
+  height: 200px;
+  perspective: 500px; /* La perspective crée l'effet 3D */
+}
+
+.image-3d img {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(45deg); /* Inclinaison de 30 degrés autour de l'axe Y */
+  transition: transform 0.8s ease; /* Animation de la transformation */
+}
+
+.image-3d img:hover {
+  transform: rotateY(60deg); /* Réinitialiser l'inclinaison au survol */
+}
+
+/*LOGOS Animation*/
+/* Opérateurs Mobile  avec animation logos OPERATEUR*/

@@ -1,0 +1,112 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  margin-right: 10px;
+margin-left: 10px;
+  padding: 0;
+}
+::selection {
+    background-color: yellow;
+    color: black;
+}
+
+/* Styles pour les écrans de résolution 1920x1080 */
+@media screen and (min-width: 1920px) {
+  p {
+    font-size: 1.3rem; /* Ajustement de la taille de police pour les écrans 1920x1080 */
+  }
+}
+
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1.9rem; /* Ajustement de la taille de police pour les écrans plus petits */
+  }
+}
+
+/* Styles pour les écrans plus grands */
+@media screen and (min-width: 769px) {
+  p {
+    font-size: 1.1rem; /* Ajustement de la taille de police pour les écrans plus grands */
+  }
+}
+@media screen and (max-width: 480px) {
+  /* Styles pour les écrans de smartphones */
+}
+
+html, body{
+  height: 100% ;
+}
+
+.contents {
+  /*background-color: #d6cfcb ;/*#F0F0F2*/
+  padding: 5px 50px 50px;
+flex-grow: 1;
+}
+
+body {
+	margin: 0 auto;
+	/*background-color: var(--primary-color);*/
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+/* Styles globaux */
+
+background-image: url('../../images/Favicon/test_couleur.jpg'); /* Spécifiez le chemin de votre image */
+background-size: cover; /* Ajustez la taille de l'image pour couvrir tout l'arrière-plan */
+background-attachment: fixed; /* L'image reste fixe lors du défilement */
+background-repeat: no-repeat; /* Empêche la répétition de l'image */
+background-position: center center; /* Centre l'image horizontalement et verticalement */
+}
+
+
+
+legend {
+  background-color: red;
+  color: #fff;
+  padding: 4px 6px;
+}
+
+blockquote {
+  /*background-color: #F0F0F2;*/
+  /*border-left: 2px solid #333; /* Ajoute une bordure à gauche */
+  /*padding: 10px; /* Ajoute de l'espace intérieur */
+  margin: 15px 0; /* Ajoute de la marge en haut et en bas */
+  margin-left: 40px;
+}
+
+
+
+
+/* pied de page*/
+footer {
+  background: #c5baba;
+  padding: 2px;
+  font-size: 14px;
+  text-align: center;
+}
+/* Appliquez un style à l'élément avec la classe "contact" */
+span.contact {
+  margin-right: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+/* Appliquez un style à l'élément avec la classe "copyright" */
+span.copyright {
+  margin-left: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+/* Centrez le contenu de l'élément avec la classe "centered-mailto" */
+span.centered-mailto {
+  text-align: center;
+}
+/* pied de page*/
+
+/* Style pour la première lettre */
+.first-letter {
+  font-size: 1.5em; /* Ajustez la taille de la première lettre selon vos préférences */
+  font-weight: bold; /* Optionnel : rendre la première lettre en gras */
+  margin-right: 0px; /* Optionnel : ajouter un espacement à droite de la première lettre */
+}

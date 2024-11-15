@@ -1,0 +1,82 @@
+/*Tableaux Opérateur*/
+.SDA {
+  color: var(--gray-100);
+  width: 50%;
+  border-collapse: collapse;
+  text-align: center; /* Aligner le contenu au centre */
+}
+
+.SDA th, .SDA td {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid white;
+   border-collapse: collapse;
+}
+/*Tableaux Opérateur*/
+
+/*tableau voip*/
+.RVOIP {
+  color: black;
+  width: 50%;
+  border-collapse: collapse;
+  text-align: center; /* Aligner le contenu au centre */
+}
+
+.RVOIP th, .RVOIP td {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid black;
+}
+/*tableau voip*/
+
+/*cablage hist*/
+.hist {
+  width: 100%;
+  border-collapse: collapse; /* Fusionne les bordures adjacentes pour une apparence plus nette */
+  max-width: 1000px;
+}
+
+
+.hist th, .hist td {
+  border: 2px solid black; /* Définit une bordure noire de 1 pixel */
+  padding: 8px; /* Ajoute un espace de remplissage pour améliorer l'apparence */
+  padding: 10px;
+  color: black;
+}
+/*cablage hist*/
+
+.quot {
+  /*color: black;*/
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center; /* Aligner le contenu au centre */
+
+}
+
+.quot th, .quot td {
+  width: 150px;
+  padding: 4px;
+  border: 2px solid white;
+ border-radius: 10px; /* Arrondir les coins des cellules */
+}
+
+ /* Dans votre fichier CSS pour la page spécifique */
+.table-encadre {
+ /*color: black;*/
+ width: 90%;
+ border-collapse: collapse;
+ text-align: center; /* Aligner le contenu au centre */
+    }
+    /* Styles pour les cellules de la table encadrée */
+    .table-encadre td, .table-encadre th {
+      border: 1px solid white; /* Un trait simple de 1 pixel de large, couleur noire */
+      width: 100px;
+      padding: 5px;
+    }
+.table-rounded {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px; /* Vous pouvez ajuster la valeur pour définir le rayon de l'arrondi */
+}
+
+

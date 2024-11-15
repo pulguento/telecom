@@ -1,0 +1,57 @@
+/*animation postes*/
+
+.poste {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ margin: 5px;
+ padding: 5px;
+ border: 2px solid #ccc;
+ background-color: var(--gray-75);
+  border-radius: 10px;
+
+}
+
+.image {
+ max-width: 70%;
+ max-height: 70%;
+ margin: 10px;
+ animation-name: pulse;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes pulse {
+ from {
+  transform: scale(0.5);
+}
+to {
+  transform: scale(0.8);
+}
+}
+
+.image-poste {
+ flex-basis: calc(25% - 20px);
+ position: relative;
+ overflow: hidden;
+}
+
+.image-poste:before {
+ content: "";
+ display: block;
+ padding-top: 65%; /* 4:3 Aspect Ratio */
+}
+
+.image-poste img {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ margin: auto;
+ max-height: 100%;
+ max-width: 100%;
+}
+/*animation postes*/

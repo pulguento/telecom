@@ -1,0 +1,93 @@
+/* Style pour la barre de navigation */
+.header-nav {
+  background-color: transparent; /* Rend le fond transparent *//*var(--primary-color); /* Couleur de fond de la barre de navigation */
+  width: 100%; /* Occuper 100% de la largeur de la fenêtre */
+  text-align: center; /* Centrer les éléments horizontalement */
+}
+
+/* Style pour la liste (ul) */
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utilisation de "flex" pour afficher les éléments en ligne */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des boutons si nécessaire */
+  padding-left: 5px; /* Ajouter un padding à gauche pour l'espacement */
+  justify-content: center; /* Centrer les boutons horizontalement */
+}
+
+/* Style pour chaque élément de liste (li) */
+.header-nav li {
+  margin-right: 5px; /* Marge entre les éléments pour les espacer */
+}
+
+/* Style pour les boutons */
+.nav-button {
+  padding: 5px 10px;
+  /*background-color:var(--gray-75);*/
+  background: url('../../images/Favicon/carbon.jpg') repeat;
+  color:var(--gray-100);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center; /* Centrer le texte horizontalement */
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  overflow: hidden; /* Masquer le texte dépassant du bouton */
+  text-overflow: ellipsis; /* Ajouter une ellipse (...) si le texte dépasse le bouton */
+  min-width: 100px; /* Définir une largeur minimale pour les boutons */
+  display: flex; /* Utilisation de "flex" pour aligner le contenu verticalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  height: 40px; /* Définir une hauteur fixe pour tous les boutons */
+  margin-right: 15px; /* Espacement horizontal entre les boutons */
+  text-decoration: none; /* Supprimer la soulignement par défaut sur les boutons */
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre textuelle */
+  font-family: "Arial", sans-serif; /* Changement de police de caractères */
+  /*background-image: url('../../images/Favicon/carbone1.jpg'); /* Ajoutez le chemin de votre image de carbone */
+  transition: background-color 0.3s, color 0.3s, text-shadow 0.3s; /* Ajout de transition */
+  background-repeat: repeat;
+}
+
+/*.nav-button:hover {
+  background-color: #0056A3;*/
+/*}*/
+.nav-button:hover {
+  background: url('../../images/Favicon/carbonred.jpg') repeat; /* Image de fond différente au survol */
+  /*color: white;*/
+}
+
+/* Styles pour la section de liens rapides */
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.quick-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.quick-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color); /* Couleur de fond de bouton */
+  color: #fff; /* Couleur du texte */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px; /* Espacement horizontal entre les boutons */
+  transition: background-color 0.3s;
+}
+
+.quick-links a:hover {
+  background-color: #0056A3; /* Couleur de fond au survol */
+}
+
+/* Styles pour la section de liens rapides */

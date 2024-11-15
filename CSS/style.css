@@ -1,0 +1,33 @@
+/* style.css */
+@import url("section/header.css");
+@import url("section/section.css");
+@import url("section/global.css");
+@import url("section/titre.css");
+@import url("section/tableaux.css");
+@import url("section/contact.css");
+@import url("section/boutons.css");
+@import url("section/animpostes.css");
+@import url("section/images.css");
+@import url("section/lexique.css");
+/* Le reste de vos styles pour ce fichier CSS */
+
+
+
+:root {
+    --roboto: "Roboto", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
+
+    --primary-color: #008080; /* Bleu sarcekke */
+    --secondary-color: #fff;
+
+ 	--orange-75:#FF3300;
+
+    --gray-15: #262626;
+    --gray-36: #5c5c5c;
+    --gray-75:  #34495e;
+    --gray-100: #888888;
+	
+}
+
+
+
