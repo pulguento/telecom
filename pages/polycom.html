@@ -1,0 +1,86 @@
+!DOCTYPE html>
+<html lang="fr">
+<head><!-- Ceci est un commentaire -->
+	<meta charset="UTF-8">
+	<!-- Indiquer au fichier .html qu'on utilise une feuille de style .css -->
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<!-- titre de l'onglet -->
+	<title>Polycom (PIEUVRE)</title>
+<!-- titre de l'onglet -->
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<!-- logo -->	
+<center>
+	<div class="../image/logo.png"> <img style="width: 146px; height: 70px;" src="../images/logo.PNG" alt="logo" title="logo" id="logo"> </div>
+</center>
+<!-- logo -->	
+<!-- Boutons-->
+<a href="#" class="btn-back-to-top"><img src="../images/fleche-retour.png" alt="Haut de page" style="width: 20px; height: 20px;"></a>
+<a href="../index.html" class="btn-back-to-home"><img src="../images/home.png" alt="Retour" style="width: 20px; height: 20px;"></a>
+<!-- Boutons-->
+
+</head>
+<header><main> 
+	<nav class="header-nav">
+		<ul> 
+			<li><button class="nav-button" onclick="window.location.href='../index.html#Accueil'"><span class="first-letter">A</span>ccueil</button></li>
+			<li><button class="nav-button" onclick="window.location.href='../index.html#Documentations'"><span class="first-letter">D</span>ocumentations</button></li>
+		</ul>	
+	</nav>
+	</main></header>
+<div class= "contents">
+<body>
+	
+	
+
+	<blockquote>
+		<section id="Documentations" >
+			<h2>Polycom SoundStation IP 6000</h2>
+			<p class="non-encadre">Il utilise la voix sur IP (VoIP) pour fournir une qualité audio supérieure et une connectivité réseau.
+				<br/>
+				Avec un microphone à 360 degrés, le SoundStation IP 6000 est conçu pour capter les voix de tous les participants de la salle de réunion, tandis que la technologie de suppression d'écho acoustique avancée réduit les interférences sonores et améliore la clarté de la voix.
+				<br/>
+				Le SoundStation IP 6000 est également équipé de fonctionnalités avancées telles que la prise en charge de plusieurs protocoles VoIP, l'interopérabilité avec les plates-formes de communication unifiée, la gestion à distance et la sécurité renforcée pour garantir la confidentialité des conversations.
+				<br/>
+			</p>
+			<h4>Documentations</h4>
+			<a href="../documents/soundstation_ip6000_qug_fr-1/soundstation_ip6000_qug_fr.pdf" target="_banck">Notice d'utilisation Polycom SoundStation IP 6000 (PDF)</a><br>
+			<a href="../Pret/Feuille-de-pret.html" target="_banck">Feuille de prêt Polycom SoundStation IP 6000 (PDF)</a>
+			<br><br>
+			Informations complémentaires:
+			<!--<p class="encadre"></p>-->
+			<p class="non-encadre"></p>
+
+			<br>
+			<br>
+			<br>
+		</section>
+
+</blockquote>
+
+</div>
+</blockquote>
+<footer>
+<iframe src="../footer.html" frameborder="0" align="right ou left" width="110%" height="35"></iframe>
+		<!-- <span class="contact">Contact the author</span> <span class="centered-mailto"><a href="mailto:jean-francois.grondin@universcience.fr">Jean-francois.grondin@universcience.fr</a></span> <span class="copyright">Version 1.2.6 © 2023-2024</span><center><img src="../images/Logo-Service-telecom.png" alt="test"> </img></center>-->
+	</footer>
+
+<!-- bouton-->
+	<script>
+		const btnBackToTop = document.querySelector('.btn-back-to-top');
+		const btnBackToHome = document.querySelector('.btn-back-to-home');
+
+		btnBackToHome.classList.add('hidden');
+
+		window.addEventListener('scroll', function() {
+			if (window.scrollY > 100) {
+				btnBackToHome.classList.remove('hidden');
+			} else {
+				btnBackToHome.classList.add('hidden');
+			}
+		});
+	</script>
+	<!-- bouton-->
+
+
+</body>
+</html>

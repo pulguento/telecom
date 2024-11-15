@@ -1,0 +1,159 @@
+<! DOCTYPE html>
+<html lang="fr"> 
+<head><!-- Ceci est un commentaire --> 
+    <meta charset="UTF-8">
+    <!-- Indiquer au fichier .html qu'on utilise une feuille de style .css -->
+
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <title>Glossaire Status MiCollab</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon"> 
+    <center>
+        <div class="../image/logo.png"> <img style="width: 146px; height: 70px;" src="../images/logo.PNG" alt="logo" title="logo" id="logo">
+        </div> 
+    </center> 
+    <!-- Boutons--> 
+
+    <a href="#" class="btn-back-to-top"><img src="../images/fleche-retour.png" alt="Haut de page" style="width: 20px; height: 20px;"></a>
+    <a href="../index.html" class="btn-back-to-home"><img src="../images/home.png" alt="Retour" style="width: 20px; height: 20px;"></a>
+    <!--<button class="btn-back-to-home hidden">Retour</button>-->
+
+    <!-- Boutons-->
+
+
+</head>
+<body>
+    <header>
+<main> 
+			<nav class="header-nav">
+				<ul> 
+					<li><button class="nav-button" onclick="window.location.href='../index.html#Accueil'"><span class="first-letter">A</span>ccueil</button></li>
+				</ul>	
+			</nav>
+		</main>
+
+    </header>
+    <div class= "contents">
+        <br><br>       
+
+            <h1>Documentation sur les Événements Techniques : Significations, Causes et Solutions</h1>
+    <h2>Event type :</h2>
+       
+
+        
+<table>
+  <table>
+        <tr>
+            <td>
+        <section class="section">
+            <h3> Critical &#x2192;   " WebRTC service crashed"            </h3>
+            <p><strong>Description :</strong> Signale qu'un service WebRTC a échoué ou s'est arrêté de manière inattendue.</p>
+            <p><strong>Explication :</strong> <code>WebRTC</code> : Technologie pour la communication en temps réel via les navigateurs web.</p>
+            <p><strong>Causes possibles :</strong> Bugs logiciels, problèmes de configuration.</p>
+            <p><strong>Dépannage :</strong> Consultez les logs, vérifiez la configuration.</p>
+        </section>
+		  </td>
+            <td>
+			<section class="section">
+             <h3> &#x2192;Avec Description : "sbac (6073) application is aborted, signal: 9 " </h3>
+            <p><strong>Description :</strong> Ce message signifie que l'application <code>sbac</code> a été arrêtée brusquement en raison d'un signal <code>9</code> (SIGKILL) sur les systèmes Unix/Linux.</p>
+            <p><strong>Explication :</strong> <code>SIGKILL (Signal 9)</code> : Un signal envoyé pour forcer l'arrêt immédiat d'un processus, généralement utilisé lorsqu'un processus ne répond pas ou ne peut pas être arrêté autrement.</p>
+            <p><strong>Causes possibles :</strong> Défaillance grave, ressources insuffisantes.</p>
+            <p><strong>Dépannage :</strong> Consultez les logs, vérifiez les ressources.</p>
+        </section>
+		 </td>
+        </tr>
+    </table>
+		
+		
+        <section class="section">
+            <h3>Indeterminate  &#x2192; WebRTC service started</h3>
+            <p><strong>Description :</strong> Ce message indique que le service WebRTC a démarré avec succès et est désormais opérationnel.</p>
+            <p><strong>Explication :</strong> <code>WebRTC</code> : Abbréviation de "Web Real-Time Communication". C'est une technologie permettant la communication en temps réel via les navigateurs web sans avoir besoin de plugins supplémentaires.</p>
+            <p><strong>Causes possibles :</strong> Démarrage normal du service, initialisation réussie après un redémarrage ou une mise à jour du service.</p>
+            <p><strong>Dépannage :</strong> Vérification des logs, configuration correcte, connectivité.</p>
+        </section>
+
+<section class="section">
+            <h3>Minor &#x2192;   "cluster disconnected peer"</h3>
+            <p><strong>Description :</strong> Indique qu'un nœud ou un pair dans un cluster a été déconnecté ou ne peut plus communiquer avec le reste du cluster.</p>
+            <p><strong>Explication :</strong> <code>Cluster</code> : Un groupe de serveurs travaillant ensemble. <code>Peer</code> : Un nœud ou composant dans le cluster.</p>
+            <p><strong>Causes possibles :</strong> Problèmes réseau, panne matérielle.</p>
+            <p><strong>Dépannage :</strong> Vérifiez la connectivité, examinez les configurations.</p>
+        </section>
+
+        <section class="section">
+            <h3>Warning  &#x2192;    "SIP call terminated"</h3>
+            <p><strong>Description :</strong> Signifie qu'un appel utilisant le protocole SIP a été terminé.</p>
+            <p><strong>Explication :</strong> <code>SIP</code> : Protocole utilisé pour initier et terminer des sessions de communication multimédia.</p>
+            <p><strong>Causes possibles :</strong> Fin normale, problèmes techniques.</p>
+            <p><strong>Dépannage :</strong> Analysez les logs, vérifiez les configurations.</p>
+        </section>
+		
+		<section class="section">
+            <h3>Minor  &#x2192;  Excessive jitter</h3>
+            <p><strong>Description :</strong> Indique des variations importantes dans les délais d'arrivée des paquets de données, affectant les communications en temps réel.</p>
+            <p><strong>Explication :</strong> <code>Jitter</code> : Variation dans le temps de transmission des paquets.</p>
+            <p><strong>Causes possibles :</strong> Congestion réseau, interférences.</p>
+            <p><strong>Dépannage :</strong> Optimisez le réseau, configurez QoS.</p>
+        </section>
+
+        <section class="section">
+            <h3>Indeterminate  &#x2192; IDS status</h3>
+            <p><strong>Description :</strong> Indique l'état actuel d'un système de détection d'intrusions (IDS).</p>
+            <p><strong>Explication :</strong> <code>IDS</code> : Système pour détecter les tentatives d'intrusion.</p>
+            <p><strong>Statuts possibles :</strong> Active, Inactive, Alert, Error.</p>
+            <p><strong>Dépannage :</strong> Consultez les logs, vérifiez les configurations.</p>
+        </section>
+
+        <section class="section">
+            <h3>Indeterminate &#x2192;   cluster tug connected</h3>
+            <p><strong>Description :</strong> Indique qu'un composant ou service identifié par "TUG" a été connecté avec succès au cluster.</p>
+            <p><strong>Explication :</strong> <code>TUG</code> : Terme spécifique à votre système.</p>
+            <p><strong>Dépannage :</strong> Consultez la documentation, vérifiez les logs.</p>
+        </section>
+		
+        
+
+        <section class="section">
+            <h3>Indeterminate  &#x2192;  database update</h3>
+            <p><strong>Description :</strong> Se réfère aux modifications ou ajouts effectués dans une base de données.</p>
+            <p><strong>Explication :</strong> Opérations : mise à jour (UPDATE), insertion (INSERT), suppression (DELETE).</p>
+            <p><strong>Dépannage :</strong> Assurez l'intégrité des données, gérez les erreurs.</p>
+        </section>
+
+        <section class="section">
+            <h3>Indeterminate  &#x2192;  master ack</h3>
+            <p><strong>Description :</strong> Confirmation reçue par un composant maître concernant une opération ou un processus dans un système distribué.</p>
+            <p><strong>Explication :</strong> <code>Maître</code> : Composant centralisé dans un système distribué.</p>
+            <p><strong>Utilisations possibles :</strong> Confirmation de données, coordination des tâches.</p>
+            <p><strong>Dépannage :</strong> Vérifiez les confirmations, gérez les erreurs.</p>
+        </section>
+
+        <section class="section">
+            <h3>Indeterminate  &#x2192;  MVF Monitoring Tool</h3>
+			<p><strong>Description :</strong> Outil de surveillance pour des systèmes ou applications, où "MVF" est un acronyme ou un terme spécifique.</p>
+            <p><strong>Explication :</strong> <code>Monitoring Tool</code> : Utilisé pour surveiller les performances, les erreurs, etc.</p>
+            <p><strong>Dépannage :</strong> Consultez la documentation, vérifiez la configuration.</p>
+        </section>
+        </section>
+
+
+ 
+
+
+
+
+</div><!-- .row -->
+</section>
+
+
+</div>
+<!--Boutons-->
+<script src="../js/script.js"></script>
+<!-- boutons-->
+<footer>
+<iframe src="../footer.html" frameborder="0" align="right ou left" width="110%" height="35"></iframe>
+		<!-- <span class="contact">Contact the author</span> <span class="centered-mailto"><a href="mailto:jean-francois.grondin@universcience.fr">Jean-francois.grondin@universcience.fr</a></span> <span class="copyright">Version 1.2.6 © 2023-2024</span><center><img src="../images/Logo-Service-telecom.png" alt="test"> </img></center> -->
+	</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opérateurs Mobiles</title>
+    <style>
+        /* Style pour la section Opérateurs Mobiles */
+        #Opé-mobiles {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #FF5733, #00A65E, #3E4095, #F5BB00);
+            background-size: 200% 200%;
+            animation: gradient 10s ease infinite;
+            position: relative;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style pour le conteneur des logos */
+        .logos-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Style pour chaque logo mobile */
+        .logo-mobile {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+
+        /* Au survol, effectuez une transformation (rotation) */
+        .logo-mobile:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <section id="Opé-mobiles" onclick="redirectToOperateursM()">
+        <div class="logos-container">
+            <div class="logo-mobile">
+                <img src="images/opemobiles/Orange.png" alt="Orange">
+            </div>
+            <div class="logo-mobile">
+                <img src="images/opemobiles/SFR.png" alt="SFR">
+            </div>
+            <div class="logo-mobile">
+                <img src="images/opemobiles/Bouygues.png" alt="Bouygues">
+            </div>
+            <div class="logo-mobile">
+                <img src="images/opemobiles/Free.png" alt="FREE">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function redirectToOperateursM() {
+            window.location.href = 'pages/OperateursM.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<html lang="fr">
+<head><!-- Ceci est un commentaire -->
+	<meta charset="UTF-8">
+	<!-- Indiquer au fichier .html qu'on utilise une feuille de style .css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
+	<!-- titre de l'onglet -->
+	<title>IP TAU ascenseurs</title>
+	<!-- logo -->	
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+ <center>
+		<div class="../image/logo.png"> <img style="width: 146px; height: 70px;" src="../images/logo.PNG" alt="logo" title="logo" id="logo"> </div>
+	</center>
+	<!-- logo -->
+
+	<!-- Boutons-->
+	<a href="#" class="btn-back-to-top">Haut de page</a>
+	<a href="../index.html" class="btn-back-to-home">Retour</a>
+	<!-- Boutons-->
+</head>
+
+<body>
+<header>
+	<main> 
+		<nav> <ul> 
+			<li><a href="../index.html#Accueil"><font size="5pt">A</font>ccueil</a></li>
+			<li><a href="../index.html#Documentations"><font size="5pt">D</font>ocumentations</a></li> 
+		</nav>
+	</main>
+</header>
+
+
+	<div class= "contents">
+		
+		
+			<section id="Documentations" >
+				<h2>IPTAU (Tri-phonie) ascenseurs</h2>
+			<p>L'installation TAU Amphitech dans un ascenseur est un système de communication bidirectionnel qui permet aux passagers de communiquer facilement avec les personnes à l'extérieur de l'ascenseur en cas d'urgence ou de panne. <br>
+			Le système comprend un amplificateur audio, des haut-parleurs, un microphone, un panneau de contrôle et des câbles de connexion, ainsi qu'une alimentation électrique pour l'amplificateur et le panneau de contrôle. Le fonctionnement est simple : le système capte le son de la voix de la personne à l'intérieur de l'ascenseur et l'envoie aux haut-parleurs à l'extérieur, et inversement, le son de la voix de la personne à l'extérieur est envoyé aux haut-parleurs à l'intérieur.<br/>
+			L'installation TAU Amphitech est conçue pour améliorer la sécurité des passagers en permettant une communication rapide et efficace en cas d'urgence, et en offrant une assistance rapide en cas de besoin.</p><br>
+			<br>
+			<h4>Documentations</h4>
+			<br>
+			<a href="../documents/IPTAU/Paramétrage IP-TAU.pdf"target="_blank">IP TAU (Triphonie) </a><br>
+			<a href="../documents/IPTAU/Tél-Triphonie.pdf"target="_blank">Feuille récapitulative des numéros  analogiques de la tri-phonie</a>
+			<br><br>
+			<span class="underline">Informations complémentaires:</span><br>
+			<p>À ce jour, nous ne fournissons que les lignes téléphoniques et nous devons assurer la continuité des liaisons.</p>
+		</section>
+	</div>
+	
+	<!-- boutons-->
+	<script>
+		const btnBackToTop = document.querySelector('.btn-back-to-top');
+		const btnBackToHome = document.querySelector('.btn-back-to-home');
+
+		btnBackToHome.classList.add('hidden');
+
+		window.addEventListener('scroll', function() {
+			if (window.scrollY > 100) {
+				btnBackToHome.classList.remove('hidden');
+			} else {
+				btnBackToHome.classList.add('hidden');
+			}
+		});
+	</script>
+	<!-- boutons-->
+
+	<footer>
+		<iframe src="../footer.html" frameborder="0" align="right ou left" width="110%" height="35"></iframe>
+	</footer>
+
+</body>
+</html>

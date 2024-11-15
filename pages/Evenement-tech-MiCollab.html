@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><!-- Ceci est un commentaire -->
+	<meta charset="UTF-8">
+	<!-- Indiquer au fichier .html qu'on utilise une feuille de style .css -->
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
+
+	<!-- titre de l'onglet -->
+	<title>TAU_TASAL</title>
+	<!-- logo -->	
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+	<!-- logo -->	
+	<center>
+		<div class="../image/logo.png"> <img style="width: 146px; height: 70px;" src="../images/logo.PNG" alt="logo" title="logo" id="logo"> </div>
+	</center>
+	<!-- logo -->	
+	<!-- Boutons-->
+	<a href="#" class="btn-back-to-top"><img src="../images/fleche-retour.png" alt="Haut de page" style="width: 20px; height: 20px;"></a>
+	<a href="../index.html" class="btn-back-to-home"><img src="../images/home.png" alt="Retour" style="width: 20px; height: 20px;"></a>
+	<!-- Boutons-->
+</head>
+<body>
+
+
+
+
+<h1>Documentation sur les Événements Techniques : Significations, Causes et Solutions</h1><br>
+<br>
+<p>
+<h2> 1. "sbac (6073) application is aborted, signal: 9"</h2> <br>
+<br>
+    Description : Ce message signifie que l'application sbac a été arrêtée brusquement en raison d'un signal 9 (SIGKILL) sur les systèmes Unix/Linux.<br>
+    Explication :<br>
+        SIGKILL (Signal 9) : Un signal envoyé pour forcer l'arrêt immédiat d'un processus, généralement utilisé lorsqu'un processus ne répond pas ou ne peut pas être arrêté autrement.<br>
+    Causes possibles :<br>
+        Défaillance grave : Le processus pourrait avoir rencontré une erreur critique qui a nécessité une terminaison forcée.<br>
+        Ressources insuffisantes : Manque de mémoire ou de ressources CPU peut provoquer un crash.<br>
+    Dépannage :<br>
+        Consulter les logs : Cherchez des messages d’erreur dans les journaux pour identifier la cause du problème.<br>
+        Vérifier les ressources : Assurez-vous que le système dispose de suffisamment de ressources pour exécuter l'application.<br>
+<br>
+<h2>2. "cluster disconnected peer"</h2><br>
+<br>
+    Description : Indique qu'un nœud ou un pair dans un cluster a été déconnecté ou ne peut plus communiquer avec le reste du cluster.<br>
+    Explication :<br>
+        Cluster : Un groupe de serveurs ou de nœuds travaillant ensemble pour assurer la redondance et la haute disponibilité.<br>
+        Peer : Un nœud ou un composant dans le cluster.<br>
+    Causes possibles :<br>
+        Problèmes réseau : Connexion interrompue ou défaillance de l'infrastructure réseau.<br>
+        Panne matérielle : Un nœud peut être hors service en raison d'une défaillance matérielle.<br>
+    Dépannage :<br>
+        Vérifier la connectivité : Assurez-vous que le réseau fonctionne correctement et que tous les nœuds sont connectés.<br>
+        Examiner les configurations : Assurez-vous que la configuration du cluster est correcte et que tous les nœuds sont correctement configurés.<br>
+<br>
+3. "SIP call terminated"<br>
+
+    Description : Signifie qu'un appel utilisant le protocole SIP (Session Initiation Protocol) a été terminé.<br>
+    Explication :<br>
+        SIP : Protocole utilisé pour initier, maintenir et terminer des sessions de communication multimédia.<br>
+    Causes possibles :<br>
+        Fin normale : L'appel a été terminé par l'utilisateur ou par un système automatisé.<br>
+        Problèmes techniques : Erreurs réseau ou configuration incorrecte des équipements SIP.<br>
+    Dépannage :<br>
+        Analyser les logs : Recherchez des détails sur la terminaison de l'appel dans les journaux d'appels.<br>
+        Vérifier les configurations : Assurez-vous que les paramètres SIP sont corrects et que les équipements sont configurés correctement.<br>
+<br>
+4. "IDS status"<br>
+<br>
+    Description : Indique l'état actuel d'un système de détection d'intrusions (IDS).
+    Explication :
+        IDS (Intrusion Detection System) : Système utilisé pour détecter les tentatives d'intrusion ou les comportements malveillants dans un réseau.
+    Statuts possibles :
+        Active : L'IDS est en fonctionnement normal.
+        Inactive : L'IDS est désactivé.
+        Alert : L'IDS a détecté des activités suspectes et a généré une alerte.
+        Error : Problème avec l'IDS nécessitant une intervention.
+    Dépannage :
+        Consulter les logs : Recherchez des informations sur les alertes et les erreurs.
+        Vérifier les configurations : Assurez-vous que les règles de détection sont à jour et correctement configurées.
+
+5. "cluster tug connected"
+
+    Description : Indique qu'un composant ou service spécifique identifié par "TUG" a été connecté avec succès au cluster.
+    Explication :
+        TUG : Terme ou acronyme spécifique à votre système qui pourrait désigner un service ou un composant.
+    Dépannage :
+        Consulter la documentation : Vérifiez ce que "TUG" représente dans votre environnement spécifique.
+        Vérifier les logs : Assurez-vous que la connexion a été établie correctement et sans erreurs.
+
+6. "WebRTC service crashed"
+
+    Description : Signale qu'un service WebRTC a échoué ou s'est arrêté de manière inattendue.
+    Explication :
+        WebRTC : Technologie permettant la communication en temps réel via les navigateurs web.
+    Causes possibles :
+        Bugs logiciels : Problèmes dans le code du service WebRTC.
+        Problèmes de configuration : Configuration incorrecte des paramètres WebRTC.
+    Dépannage :
+        Consulter les logs : Examinez les journaux pour des détails sur le crash.
+        Vérifier la configuration : Assurez-vous que les paramètres et les dépendances du service WebRTC sont corrects.
+
+7. "Excessive jitter"
+
+    Description : Indique des variations importantes dans les délais d'arrivée des paquets de données, affectant les communications en temps réel.
+    Explication :
+        Jitter : Variation dans le temps de transmission des paquets, souvent problématique pour les applications en temps réel comme les appels VoIP ou les vidéoconférences.
+    Causes possibles :
+        Congestion réseau : Surcharge du réseau pouvant entraîner des retards variables.
+        Interférences : Sur les réseaux sans fil, les interférences peuvent augmenter le jitter.
+    Dépannage :
+        Optimiser le réseau : Améliorez la bande passante et configurez correctement les équipements réseau.
+        Configurer QoS : Priorisez le trafic temps réel pour réduire l'impact du jitter.
+
+8. "database update"
+
+    Description : Se réfère aux modifications ou ajouts effectués dans une base de données.
+    Explication :
+        Opérations : Inclut les mises à jour (UPDATE), insertions (INSERT), et suppressions (DELETE) des données.
+    Dépannage :
+        Assurer l'intégrité des données : Vérifiez que les données mises à jour restent cohérentes.
+        Gérer les erreurs : Implémentez des mécanismes pour gérer les erreurs et les conflits de données.
+
+9. "master ack"
+
+    Description : Confirmation reçue par un composant maître concernant une opération ou un processus dans un système distribué.
+    Explication :
+        Maître : Composant centralisé qui coordonne les opérations dans un système distribué.
+    Utilisations possibles :
+        Confirmation de données : Vérifie que les données ont été correctement reçues et traitées.
+        Coordination des tâches : Assure que toutes les conditions nécessaires sont remplies avant de poursuivre.
+    Dépannage :
+        Vérifier les confirmations : Assurez-vous que les confirmations sont correctement reçues et traitées.
+
+10. "MVF Monitoring Tool"
+
+    Description : Outil de surveillance pour des systèmes ou applications, où "MVF" est un acronyme ou un terme spécifique.
+    Explication :
+        Monitoring Tool : Utilisé pour surveiller les performances, les erreurs, et d'autres aspects des systèmes informatiques.
+    Dépannage :
+        Consulter la documentation : Obtenez des détails sur les fonctionnalités spécifiques de l'outil MVF.
+        Configurer et vérifier : Assurez-vous que l'outil est correctement configuré pour surveiller les aspects requis.  </p>
+		
+		<footer>
+			<iframe src="../footer.html" frameborder="0" align="right ou left" width="110%" height="35"></iframe>
+	</footer>
+</body>
+</html>
